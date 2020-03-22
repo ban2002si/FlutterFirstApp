@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 void main () {
@@ -16,10 +17,32 @@ class MyApp extends StatelessWidget {
         title: Text('برنامج أولي'),
         backgroundColor: Colors.pink[300],
       ),
-      body: Text(
-          'الأرضية',
-          style: TextStyle(fontSize: 45.0)
-        ),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        crossAxisAlignment: CrossAxisAlignment.center,
+        children: <Widget>[
+          Container(
+            child: Text('حرف أ'),
+            color: Colors.blue,
+            padding: EdgeInsets.all(30),
+          ),
+          Container(
+            child: Text('حرف ب'),
+            color: Colors.brown,
+            padding: EdgeInsets.all(30),
+          ),
+          Container(
+            child: Text('حرف ج'),
+            color: Colors.orange,
+            padding: EdgeInsets.all(30),
+          ),
+          Container(
+            child: Text('حرف د'),
+            color: Colors.purple,
+            padding: EdgeInsets.all(30),
+          ),
+        ],
+      )
     );
   }
 }
@@ -38,4 +61,9 @@ class MyApp extends StatelessWidget {
 //loadingBuilder: (context, child, progress) {
 //return progress == null ? child : LinearProgressIndicator();
 //}
+//),
+
+//Text(
+//'الأرضية',
+//style: TextStyle(fontSize: 45.0)
 //),
